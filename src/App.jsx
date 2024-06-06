@@ -6,6 +6,9 @@ import Action from './examples/Action';
 import Optimistic from "./examples/Optimistic";
 import FormStatus from "./examples/FormStatus";
 import FormState from "./examples/FormState";
+import Counter from "./examples/Counter";
+import { TraditionalFetch } from "./examples/TraditionalFetch";
+import { Optimisticname } from "./examples/OptimisticName";
 
 function App() {
   return (
@@ -16,12 +19,25 @@ function App() {
             <h1 className="text-2xl text-center font-bold mt-5">Loading...</h1>
           }
         >
-          {/* <Action />
-          <FormState />
-         <FormStatus />
-           <Optimistic /> */}
-          {/* <Users /> */}
-          <Theme />
+          {/* Compiler example */}
+          {/* <Counter /> */}
+
+          {/* Fetch example */}
+          {/* <TraditionalFetch />
+          <Users /> */}
+           {/* <Theme /> */}
+
+          {/* Forward Ref example */}
+
+          {/* <Action /> */}
+
+
+         {/* <FormStatus /> */}
+          {/* <FormState /> */}
+           {/* <Optimistic /> */}
+        <Optimisticname />
+          
+         
         </Suspense>
       </div>
     </>
